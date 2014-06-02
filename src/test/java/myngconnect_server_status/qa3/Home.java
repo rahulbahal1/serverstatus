@@ -12,9 +12,9 @@ public class Home {
             synchronized (driver){driver.wait(5000);}
             driver.get(baseurl + "/login/teacher/login.spr");
     	    driver.findElement(By.id("j_username")).clear();
-    		driver.findElement(By.id("j_username")).sendKeys("testteacher2@wcg.com");
+    		driver.findElement(By.id("j_username")).sendKeys("testteacher1@wcg.com");
     		driver.findElement(By.id("passwordField")).clear();
-    	    driver.findElement(By.id("passwordField")).sendKeys("password");
+    	    driver.findElement(By.id("passwordField")).sendKeys("PASSWORD");
     	    driver.findElement(By.id("imgLogin")).click();
  }
 }
