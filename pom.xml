@@ -21,14 +21,14 @@
       <artifactId>SauceREST</artifactId>
       <version>1.0</version>
             <scope>system</scope>
-    <systemPath>${project.basedir}/src/test/resources/SauceREST.jar</systemPath>       	
+    <systemPath>${project.basedir}/src/test/resources/SauceREST-1.0.jar</systemPath>       	
     </dependency>
     <dependency>
      <groupId>framework</groupId>
       <artifactId>TestFramework</artifactId>
       <version>1.2</version>   
       <scope>system</scope>
-    <systemPath>${project.basedir}/src/test/resources/TestFramework1.2.jar</systemPath>       	
+    <systemPath>${project.basedir}/src/test/resources/TestFramework-1.2.jar</systemPath>       	
     </dependency>
     <dependency>
   <groupId>org.apache.maven.plugins</groupId>
