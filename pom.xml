@@ -19,6 +19,7 @@
 <dependency>
      <groupId>com.saucelabs.saucerest</groupId>
       <artifactId>SauceREST</artifactId>
+      <version>1.0</version>
             <scope>system</scope>
     <systemPath>${project.basedir}/src/test/resources/SauceREST.jar</systemPath>       	
     </dependency>
