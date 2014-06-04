@@ -19,14 +19,13 @@
 <dependency>
      <groupId>com.saucelabs.saucerest</groupId>
       <artifactId>SauceREST</artifactId>
-      <version>1.0</version>   
-      <scope>system</scope>
+            <scope>system</scope>
     <systemPath>${project.basedir}/src/test/resources/SauceREST.jar</systemPath>       	
     </dependency>
     <dependency>
      <groupId>framework</groupId>
       <artifactId>TestFramework</artifactId>
-      <version>1.0.1</version>   
+      <version>1.2</version>   
       <scope>system</scope>
     <systemPath>${project.basedir}/src/test/resources/TestFramework1.2.jar</systemPath>       	
     </dependency>
