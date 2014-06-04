@@ -37,8 +37,40 @@
   <type>maven-plugin</type>
 </dependency>
  </dependencies>
-  <build>
- <plugins>
+ 
+ <build>
+     <plugins>
+  <plugin>
+  	      <groupId>org.apache.maven.plugins</groupId>
+  	      <artifactId>maven-site-plugin</artifactId>
+  	      <version>3.1</version>
+  	      <configuration>
+  	        <reportPlugins>
+  	          <plugin>
+  	            <groupId>org.apache.maven.plugins</groupId>
+  	            <artifactId>maven-surefire-report-plugin</artifactId>
+  	            <version>2.6</version>
+  	            <configuration>
+
+          <parallel>methods</parallel>
+        <threadCount>5</threadCount>
+      </configuration>
+  	          </plugin>
+  	          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-project-info-reports-plugin</artifactId>
+            <version>2.4</version>
+            </plugin>
+  	        </reportPlugins>
+  	        
+  	        <plugin>
+        <groupId>ch.fortysix</groupId>
+        <artifactId>maven-postman-plugin</artifactId>
+       </plugin>
+  	        
+  	        
+  	      </configuration>
+  	    </plugin>
  <plugin>
    <groupId>org.apache.maven.plugins</groupId>
    <artifactId>maven-surefire-plugin</artifactId>
@@ -57,6 +89,24 @@
       </resource>
     </resources>
   </build>  
+  	<reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+        <version>2.17</version>
+        <configuration>
+          <outputName>report</outputName>
+          <outputDirectory>${project.build.directory}/site</outputDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+   </build>
+ 
+ 
+ 
+ 
+ 
   	<reporting>
     <plugins>
       <plugin>
