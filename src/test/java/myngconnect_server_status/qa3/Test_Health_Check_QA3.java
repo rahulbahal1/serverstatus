@@ -263,6 +263,6 @@ TestAssertion.assertionEquals(driver, "true", database_check);
 
 @Test
 public void TestHealth_09_Wowza()throws Exception{
-TestAssertion.assertionEquals(driver, "false", wowza_check);
+TestAssertion.assertionEquals(driver, "true", wowza_check);
 }
 }
