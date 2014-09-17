@@ -90,8 +90,8 @@ CSVHandler general = null;
 general = new CSVHandler("src/test/resources/login_health_check_qa3.csv");
 
 //Make server CSV driven
-driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
-synchronized (driver){driver.wait(20000);}
+driver.manage().timeouts().pageLoadTimeout(60,TimeUnit.SECONDS);
+synchronized (driver){driver.wait(40000);}
 
 //Check the delivery mode
 String content_repository_delivery_mode = general.getElementXpath("content_repository_delivery_mode");
