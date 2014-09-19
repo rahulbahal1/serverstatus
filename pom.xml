@@ -26,7 +26,7 @@
     <dependency>
      <groupId>framework</groupId>
       <artifactId>TestFramework</artifactId>
-      <version>1.2.0</version>   
+      <version>1.2</version>   
       <scope>system</scope>
     <systemPath>${project.basedir}/src/test/resources/TestFramework1.2.jar</systemPath>       	
     </dependency>
