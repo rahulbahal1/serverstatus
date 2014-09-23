@@ -175,6 +175,7 @@ text=null;
 
 //Authorization API
 if(delivery_mode.equals("apache"))
+synchronized (driver) {driver.wait(15000);
 {
 	String auth_api_apache = general.getElementXpath("auth_api_apache");
 	text=driver.findElement(By.xpath(auth_api_apache)).getText();
